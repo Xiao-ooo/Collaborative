@@ -1,0 +1,150 @@
+
+body {
+    font-family: "Bradley Hand ITC", "Bradley Hand", cursive;
+    background: #ffe6b0;
+    margin: 0;
+    padding: 20px;
+    color: #7a4e34;
+  }
+  
+h1 {
+    text-align: center;
+    font-size: 150px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-shadow: 8px 10px 5px #978447;
+  }
+  
+#instructions {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    background: #deb887;
+    border: 1px solid #b08969;
+    border-radius: 25px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.5);
+  }
+  
+#instructions h3 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-weight: 900;
+  }
+  
+#instructions ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: disc; /* or "circle" for hollow bullets */
+  }
+  
+#instructions li {
+    margin-bottom: 8px;
+  }
+  
+#clear-btn {
+    background: #f5deb3;
+    border: 3px solid #673621ca;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 2px 4px 12px rgba(0,0,0, 0.5);
+    transition: transform 0.2s;
+    color: #7a4e34;
+    margin-top: 15px;
+}
+
+#clear-btn:hover {
+    background: #e4c189;
+    transform: scale(1.1);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+  
+.menu-section {
+    width: 180px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #f5deb3;
+    border: 3px solid #673621ca;
+    border-radius: 25px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.5);
+}
+  
+.menu-section h3 {
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 1px 1px #341e12;
+}
+  
+.menu-section img {
+    width: 100px;
+    display: block;
+    margin: 5px auto;
+    cursor: grab;
+    transition: 0.2s;
+}
+  
+.menu-section img:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
+}
+  
+#pizza-pan {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #f5deb3 0%, #deb887 60%, #a36b3e 100%);
+    border: 2px solid #a36b3e;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    overflow: visible;
+    margin: 0 auto;
+}
+  
+#pizza-pan::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    width: 100px;
+    height: 120px;
+    transform: translateX(-50%);
+    background: #a36b3e;
+    border-radius: 48px;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.5);
+}
+  
+#pizza-pan img {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    transition: transform 0.2s;
+}
+  
+/* This is where we can adjust different size of the image after its send into the pizza pan */
+#pizza-pan img.base {
+    width: 100%;
+    height: auto;
+    top: 0%;
+    left: 0%;
+    transform: translate(-5%, -5%);
+    border-radius: 50%;
+}
+
+/* The sauce/topping is smaller than the base so its adjusted */
+#pizza-pan img.sauce, #pizza-pan img.topping {
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  

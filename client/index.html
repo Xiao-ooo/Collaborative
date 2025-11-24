@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xiao's Pizza Factory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Xiao's Pizza Factory</h1>
+
+  <div id="instructions">
+    <h3>Instructions</h3>
+    <p> → Collaborate with your pizza mates!</p>
+    <p> → CLICK on any base you like to start!</p>
+    <p> → Choose your desired sauces and toppings [There's no limit!]</p>
+  
+    <h3>Click below to remake your pizza!</h3>
+    <div id="controls" style="text-align:center; margin-bottom:20px;">
+      <button id="clear-btn">CLEAR PIZZA!</button>
+    </div>
+  </div>
+  
+
+  <div id="main">
+   
+
+    <div class="column">
+      <div class="menu-section">
+        <h3>Bases</h3>
+        <img src="images/r1base.png" data-type="base">
+        <img src="images/r2base.png" data-type="base">
+      </div>
+
+      <div class="menu-section">
+        <h3>Sauces</h3>
+        <img src="images/tomato.png" data-type="sauce">
+        <img src="images/garlic.png" data-type="sauce">
+        <img src="images/cheese.png" data-type="sauce">
+      </div>
+    </div>
+
+    
+    <div id="pizza-pan"></div>
+
+    
+    <div class="column">
+      <div class="menu-section">
+        <h3>Toppings</h3>
+        <img src="images/pepperoni.png" data-type="topping">
+        <img src="images/pineapple.png" data-type="topping">
+        <img src="images/mushroom.png" data-type="topping">
+        <img src="images/jalapeno.png" data-type="topping">
+        <img src="images/pepper.png" data-type="topping">
+        <img src="images/onions.png" data-type="topping">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
