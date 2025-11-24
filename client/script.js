@@ -8,7 +8,7 @@ const pizzaPan = document.getElementById("pizza-pan");
 const clearBtn = document.getElementById("clear-btn");
 
 //create new websocket, real time connection
-let ws = new WebSocket("ws://localhost:3000");
+let ws = new WebSocket("wss://collaborative-ievj.onrender.com");
 
 //then go over each topping/base/sauce in menu
 //when user clicks on the "menuItem", its gonna find which item then create an duplicate img
